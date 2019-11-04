@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+    <meta name="keywords" content="web design, affordable web design, professional web design">
+    <meta name="author" content="Brab Traversy">
+    <title>Saginbek | World Skills</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="page-preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <div id="branding">
+                <img class="header__logo" src="img/header__logo.png" alt="">
+            </div>
+        
+            <div class="header__nav">
+                <div class="header__ul">
+                    <b><li class="current header__li"><a class="header__link" href="index.html">Главный</a></li></b>
+                    <b><li class="header__li"><a class="header__link" href="about.html">3d тур по коледжу</a></li></b>
+                    <b><a class="header__link" href="services.html">САЛАМАТ МУКАШЕВ</a></li></b><li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="showcase">
+        <div class="container">
+            <h1 class="showcase__prymery">МИССИЯ КОЛЛЕДЖА</h1>
+            <p class="showcase__txt">ОДГОТОВКА ВОСТРЕБОВАННЫХ НА РЫНКЕ ТРУДА КВАЛИФИЦИРОВАННЫХ КАДРОВ ПУТЕМ ВНЕДРЕНИЯ ИННОВАЦИОННЫХ ТЕХНОЛОГИИ И ПЕРЕДОВОГО ОПЫТА ОБУЧЕНИЯ</p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Служба подержка</h1>
+            <form>
+                <button type="submit" class="button_one">При какой нибуть ошибок пиши суда</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <div id="movie-card-list">
+                    <div class="movie-card" data-movie="Blade Runner">
+                        <div class="movie-card__overlay"></div>
+                        <div class="movie-card__content">
+                        <div class="movie-card__header">
+                            <h1 class="movie-card__title">Осенний бал-2019</h1>
+                            <h4 class="movie-card__info">19.92.92</h4>
+                        </div>
+                        <p class="movie-card__desc">Дорогие друзья! Приглашаем Вас на один из грандиозных событий «Осенний бал-2019🍂». Здесь вас ждет зажигательная программа и много сюрпризов.🎼💥. А изюминкой бала будет выбор “King&Queen” Не</p>
+                        <button class="btn btn-outline movie-card__button" type="button">Читать далше</button>
+                        </div>
+                    </div>
+                    <div class="movie-card" data-movie="Back to the Future">
+                        <div class="movie-card__overlay"></div>
+                        <div class="movie-card__share">
+                        </div>
+                        <div class="movie-card__content">
+                        <div class="movie-card__header">
+                            <h1 class="movie-card__title">ИСТОРИКО-ПОЗНАВАТЕЛЬНАЯ ИГРА «ҚЫЗЫҚ ЕКЕН»</h1>
+                            <h4 class="movie-card__info">дата</h4>
+                        </div>
+                        <p class="movie-card__desc">В рамках недели предметно-цикловый комиссии общественных дисциплин преподаватель Блялова Бибигуль Крымовна провела историко-познавательную игру,Қызық екен (Как интересно). В игре участвовали студенты 1-</p>
+                        <button class="btn btn-outline movie-card__button" type="button">Читать далше</button>
+                        </div>
+                    </div>
+            </article>
+
+            <aside id="sidebar">
+                <div class="dark">
+                <h3>Тут Блог Директора</h3>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget magna vel orci semper dictum eu non urna. Donec scelerisque id magna a accumsan. Etiam at risus eget neque rhoncus ultricies rutrum quis tellus. Curabitur non enim a libero dictum sollicitudin sit amet at mi. Cras vitae erat eu tellus tincidunt tincidunt a vitae ligula.</P>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>Саламат Мукашев</p>
+    </div>
+
+    <script>
+        document.body.onload = function() {
+            setTimeout(function() {
+                var preloader = document.getElementById('page-preloader');
+                if( !preloader.classList.contains('done') ) 
+                {
+                    preloader.classList.add('done');
+                }
+            }, 1000);   
+        }
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>
+</html>
